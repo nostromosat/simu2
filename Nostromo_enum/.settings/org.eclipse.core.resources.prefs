@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+encoding//src/cargo/Propulsion.java=UTF-8
+encoding//src/cost/CostModel.java=UTF-8
+encoding//src/main/Mission.java=UTF-8
+encoding//src/main/Optimization.java=UTF-8
+encoding//src/trajectory/Escape_Earth.java=UTF-8
+encoding//src/trajectory/Reach_Asteroid.java=UTF-8
+encoding//src/trajectory/Return_To_Earth.java=UTF-8
+encoding//src/trajectory/Trajectory.java=UTF-8
