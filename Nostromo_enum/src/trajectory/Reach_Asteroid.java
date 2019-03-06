@@ -275,7 +275,7 @@ public class Reach_Asteroid {
 		double acc=poussee/masse;
 		double duree_lT=deltaV0/acc;
 		//System.out.println("Duree low thrust  "+  (duree_lT/86400));
-		if (duration<2*duree_lT/86400) {
+		if (duration<0.5*duree_lT/86400) {
 			//System.out.println("IMPOSSIBLE LOW THRUST");
 			list_param.set(3, 0.0);
 		}

@@ -259,7 +259,7 @@ public class Return_To_Earth {
 		double duree_lT=deltaV0/acc;
 
 
-		if (duration<2*duree_lT/86400) {
+		if (duration<0.5*duree_lT/86400) {
 			//System.out.println("IMPOSSIBLE LOW THRUST");
 			list_param.set(3, 0.0);
 		}
