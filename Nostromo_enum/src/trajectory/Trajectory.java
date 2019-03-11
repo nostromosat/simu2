@@ -221,7 +221,7 @@ double masse_current;
 				
 				// Reach
 				Reach_Asteroid reach_obj=new Reach_Asteroid(Isp);
-				ArrayList<Double> traj_reach=reach_obj.rdvBiElliptic(500,masse_current, poussee);
+				ArrayList<Double> traj_reach=reach_obj.rdvBiElliptic(400,masse_current, poussee);
 
 				
 				masse_current=masse_current-traj_reach.get(1);
@@ -273,8 +273,8 @@ double masse_current;
 				System.out.println("duree toGEO  : "+duree_toG);
 
 				
-				System.out.println("-------------------------------");	
-				*/	
+				System.out.println("-------------------------------");*/
+				
 				double deltaV_tot=deltaV_esc+deltaV_reach+deltaV_mission+deltaV_ret+deltaV_toG;
 				double masse_tot=masse_esc+masse_reach+masse_mission+masse_ret+masse_toG;
 				double duree_tot=duree_esc+duree_reach+duree_mission+duree_ret+duree_toG;
@@ -314,7 +314,7 @@ double masse_current;
 				
 				// Reach
 				Reach_Asteroid reach_obj=new Reach_Asteroid(Isp);
-				ArrayList<Double> traj_reach=reach_obj.rdvBiElliptic(500,masse_current, poussee);
+				ArrayList<Double> traj_reach=reach_obj.rdvBiElliptic(400,masse_current, poussee);
 
 				
 				masse_current=masse_current-traj_reach.get(1);
@@ -343,8 +343,8 @@ double masse_current;
 				double deltaV_toG=traj_toGEO.get(0);
 				double masse_toG=traj_toGEO.get(1);
 				double duree_toG=traj_toGEO.get(2);
-				
-				/**System.out.println("-------------------------------");		
+				/**
+				System.out.println("-------------------------------");		
 				System.out.println("deltaV escape  : "+deltaV_esc);
 				System.out.println("deltaV reach  : "+deltaV_reach);
 				System.out.println("deltaV mission  : "+deltaV_mission);
@@ -405,7 +405,7 @@ double masse_current;
 			
 			// Reach
 			Reach_Asteroid reach_obj=new Reach_Asteroid(Isp);
-			ArrayList<Double> traj_reach=reach_obj.rdvBiElliptic(500,masse_current, poussee);
+			ArrayList<Double> traj_reach=reach_obj.rdvBiElliptic(400,masse_current, poussee);
 
 			
 			masse_current=masse_current-traj_reach.get(1);
@@ -434,7 +434,7 @@ double masse_current;
 			double deltaV_toG=traj_toGEO.get(0);
 			double masse_toG=traj_toGEO.get(1);
 			double duree_toG=traj_toGEO.get(2);
-			
+			/**
 			System.out.println("-------------------------------");		
 			System.out.println("deltaV escape  : "+deltaV_esc);
 			System.out.println("deltaV reach  : "+deltaV_reach);
@@ -457,7 +457,7 @@ double masse_current;
 			System.out.println("duree toGEO  : "+duree_toG);
 
 			
-			System.out.println("-------------------------------");	
+			System.out.println("-------------------------------");	*/
 			double deltaV_tot=deltaV_esc+deltaV_reach+deltaV_mission+deltaV_ret+deltaV_toG;
 			double masse_tot=masse_esc+masse_reach+masse_mission+masse_ret+masse_toG;
 			double duree_tot=duree_esc+duree_reach+duree_mission+duree_ret+duree_toG;

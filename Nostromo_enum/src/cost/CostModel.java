@@ -85,8 +85,10 @@ public class CostModel {
 		double communication_cost_r = 189 * communication_mass;
 		double ait_cost_r = 0.124 * (communication_cost_r + structure_cost_r + scao_cost_r + power_cost_r + propulsion_cost_r + command_cost_r);
 		double program_cost_r = 0.320 * (communication_cost_r + structure_cost_r + scao_cost_r + power_cost_r + propulsion_cost_r + command_cost_r + ait_cost_r);
-		double launch_cost = launcher.getCost() * dry_mass + 5850;
-		double groundsegment_cost = 5000 * (duration/(60*60*24*365));
+		//double launch_cost = launcher.getCost() * dry_mass + 5850;
+		double launch_cost = launcher.getCost() * launcher.getMaxWeight() + 5850;
+		double groundsegment_cost = 5000 * (duration/(365));
+		//System.out.println(groundsegment_cost);
 		this.detailed_cost = factor_esa_nasa * taux_change * inflation * (structure_cost_nr + scao_cost_nr + power_cost_nr + propulsion_cost_nr + 
 				command_cost_nr + communication_cost_nr + ait_cost_nr + program_cost_nr + 
 				structure_cost_r + scao_cost_r + power_cost_r + propulsion_cost_r + command_cost_r + 

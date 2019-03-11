@@ -31,18 +31,18 @@ public class Optimization {
 		ArrayList<Mission> missions_done = new ArrayList<Mission>();
 		Asteroid target = Asteroid.ARM_341843_2008_EVS;
 		int n = 0;
-		int nMax = 4;
+		int nMax = 6;
 		int best_ind = 0;
 		double min_price = Double.MAX_VALUE;
 
 		// Il faut fixer la masse des panneaux plus efficacement
 		int fuel_mass = 5000;
-		int max_ore_mass = 10000;
+		int max_ore_mass = 8000;
 		//Propulsion propu = Propulsion.PPS1350_safran;
 		for (Propulsion propu : Propulsion.values()) {
 			
 		
-		for(int ore_mass=250;ore_mass<=max_ore_mass;ore_mass += 250){
+		for(int ore_mass=1000;ore_mass<=max_ore_mass;ore_mass += 50){
 				//for(Propulsion propu : Propulsion.values()){
 					for(int i=3;i<=nMax;i++){
 						for(Launcher launch : Launcher.values()){

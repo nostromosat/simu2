@@ -246,14 +246,14 @@ public class Return_To_Earth {
 		double deltaV_inc=2*Math.sqrt(mu/rT)*(Math.sin(0.5*(Math.abs(this.inc_Earth-this.inclination))));
 		//	System.out.println("INCLINATION "+deltaV_inc);
 		double deltaV0=deltaV;
-		deltaV=2*(deltaV+deltaV_inc);
+		deltaV=(deltaV+deltaV_inc);
 		deltaM=(masse+masse_minerai)*(1-Math.exp(-deltaV/(this.Isp*Constant.g0)));
 
 		//System.out.println("Angle dephasage  "+(180/3.14)*Math.abs(Math.PI-M));
 		//System.out.println("dephasage par an  "+(this.meanmotion-this.meanmotion_Earth)*365);
 		list_param.add(deltaV);
 		list_param.add(deltaM);
-		list_param.add(2*duration);
+		list_param.add(duration);
 		list_param.add(1.0);
 		double acc=poussee/(masse+masse_minerai);
 		double duree_lT=deltaV0/acc;

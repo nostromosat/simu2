@@ -3,10 +3,10 @@ package cargo;
 public enum Launcher {
 	Ariane64_LEO("Ariane 64","LEO",21650,20,5.4,11.3),
 	Ariane64_GTO("Ariane 64","GTO",11500,20,5.4,11.3),
-	Ariane64_Escape("Ariane 64","Escape",6400,20,5.4,11.3);
-	//FalconHeavy_LEO("Falcon Heavy","LEO",63800,13.1,5.2,11.25),
-	//FalconHeavy_GTO("Falcon Heavy","GTO",26700,13.1,5.2,11.25),
-	//FalconHeavy_Escape("Falcon Heavy","Escape",16800,13.1,5.2,11.25);
+	Ariane64_Escape("Ariane 64","Escape",6400,20,5.4,11.3),
+	FalconHeavy_LEO("Falcon Heavy","LEO",63800,13.1,5.2,11.25),
+	FalconHeavy_GTO("Falcon Heavy","GTO",26700,13.1,5.2,11.25),
+	FalconHeavy_Escape("Falcon Heavy","Escape",16800,13.1,5.2,11.25);
 	
 	
 	String launcher;
